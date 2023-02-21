@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.fancy_box {
+	padding: 10px;
+	margin: 10px;
+	font-family: Arial;
+	text-align: center;
+	width: 10%;
+	background-color: gray;
+	border-radius: 5px;
+}
+
+.fancy_box p {
+	font-size: 25px;
+}
+
+.fancy_box h3 {
+	font-size: 23px;
+}
+	
