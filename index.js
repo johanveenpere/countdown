@@ -1,6 +1,6 @@
 function calculate_stuff(){
 			let start_time = new Date("2023-01-30T00:00:00");
-			let end_time = new Date("2023-12-23T00:00:00");
+			let end_time = new Date("2023-12-22T00:00:00");
 			let d = new Date();
 			let current_time = d.getTime();
 			var time_left = end_time - current_time;
