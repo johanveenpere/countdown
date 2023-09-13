@@ -9,6 +9,5 @@ function calculate_stuff(){
 			var percentage_element = document.getElementById("percentage");
 			percentage_element.innerHTML = String(Math.round(time_served / time_duration * 1000) / 10) + "%";
 			var time_left_element = document.getElementById("time_left");
-			var time_left_element = document.getElementById("time_left");
-			time_left_element.innerHTML = Math.round( time_left / (1000 * 60*60*24));
+			time_left_element.innerHTML = Math.trunc( time_left / (1000 * 60*60*24));
 }
