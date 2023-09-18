@@ -22,15 +22,26 @@ function calculate_stuff(){
 			let weeks_left_in_weeks = Math.round((weeks_left / (1000 * 60 * 60 * 24 * 7)) * 100 ) / 100;
 			weeks_left_element.innerHTML = weeks_left_in_weeks;
 			
-			let box_color = "#00FF00"
+
+			
+			let past_box_color = "grey"
+			let future_box_color = "#2b752e"
+
+			//future weeks boxes
 			for (let i = 1; i < Math.ceil(weeks_left_in_weeks); i++) {
 			  let element = document.getElementById(i.toString());
-			  element.style.backgroundColor = box_color;
+			  element.style.backgroundColor = future_box_color;
 			} 
 			
+			//current week box
 			let last_square_element = document.getElementById(Math.ceil(weeks_left_in_weeks).toString());
 			let percentage_of_current_week = (weeks_left_in_weeks - Math.floor(weeks_left_in_weeks))*100;
-			last_square_element.style.background = 'linear-gradient(to right, blue '+percentage_of_current_week+'%, transparent '+(100-percentage_of_current_week)+'%)';
+			last_square_element.style.background = 'linear-gradient(to right, '+future_box_color+' '+percentage_of_current_week+'%, transparent '+(100-percentage_of_current_week)+'%)';
 			
+			//past weeks boxes
+			for (let i = Math.ceil(weeks_left_in_weeks); i <= 15; i++) {
+				let element = document.getElementById(i.toString());
+				element.style.backgroundColor = past_box_color;
+			  } 
 			
 }
