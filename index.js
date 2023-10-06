@@ -36,7 +36,7 @@ function calculate_stuff(){
 			//current week box
 			let last_square_element = document.getElementById(Math.ceil(weeks_left_in_weeks).toString());
 			let percentage_of_current_week = (weeks_left_in_weeks - Math.floor(weeks_left_in_weeks))*100;
-			last_square_element.style.background = 'linear-gradient(to right, '+future_box_color+' '+percentage_of_current_week+'%, transparent '+(100-percentage_of_current_week)+'%)';
+			last_square_element.style.background = 'linear-gradient(to left, transparent '+ (100-Math.round(percentage_of_current_week)) +'%, '+future_box_color+' '+ Math.round(percentage_of_current_week) +'%)';
 			
 			//past weeks boxes
 			for (let i = Math.ceil(weeks_left_in_weeks); i <= 15; i++) {
