@@ -36,6 +36,7 @@
 
 #calendar div{
 	border-style: dashed;
-	border-color: #303030;
-	border-radius: 20%;
+	border-color: #3c3c3c;
+	border-radius: 16%;
+	border-width: thick;
 }

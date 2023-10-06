@@ -25,7 +25,7 @@ function calculate_stuff(){
 
 			
 			let past_box_color = "grey"
-			let future_box_color = "#2b752e"
+			let future_box_color = "rgb(93, 130, 94)"
 
 			//future weeks boxes
 			for (let i = 1; i < Math.ceil(weeks_left_in_weeks); i++) {
