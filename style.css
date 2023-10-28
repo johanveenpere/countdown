@@ -3,6 +3,7 @@
 	margin: auto;
 	justify-content: center;
 	padding-top: 30px;
+	flex-wrap: wrap;
 }
 
 .fancy_box {
@@ -10,7 +11,7 @@
 	margin: 10px;
 	font-family: Arial;
 	text-align: center;
-	width: 10%;
+	width: auto;
 	background-color: gray;
 	border-radius: 5px;
 }
